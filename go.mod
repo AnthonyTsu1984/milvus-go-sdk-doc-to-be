@@ -1,4 +1,4 @@
-module github.com/AnthonyTsu1984/milvus-godoc-to-be
+module github.com/AnthonyTsu1984/milvus-go-sdk-to-be
 
 go 1.19
 
