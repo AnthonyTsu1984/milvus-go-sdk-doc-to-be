@@ -2,11 +2,13 @@ module github.com/anthonytsu1984/milvus-go-sdk-to-be
 
 go 1.19
 
-require google.golang.org/grpc v1.52.3
+require (
+	github.com/milvus-io/milvus-proto/go-api v0.0.0-20230131092640-7aebd990ebac
+	google.golang.org/grpc v1.52.3
+)
 
 require (
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/milvus-io/milvus-proto/go-api v0.0.0-20230131092640-7aebd990ebac
 	golang.org/x/net v0.4.0 // indirect
 	golang.org/x/sys v0.3.0 // indirect
 	golang.org/x/text v0.5.0 // indirect
