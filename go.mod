@@ -1,4 +1,4 @@
-module github.com/anthonytsu1984/milvus-go-sdk-to-be
+module github.com/anthonytsu1984/milvus_go_sdk_to_be
 
 go 1.19
 
