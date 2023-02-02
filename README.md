@@ -1,1 +1,3 @@
-# Milvus SDK to be
+# Milvus GO SDK
+
+This is a go doc
