@@ -22,6 +22,7 @@ import (
 	server "github.com/milvus-io/milvus-proto/go-api/milvuspb"
 )
 
+// This struct type offers a gRPC client to communicate with Milvus.
 type GrpcClient struct {
 	Conn    *grpc.ClientConn
 	Service server.MilvusServiceClient
