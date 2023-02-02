@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2021 Zilliz. All rights reserved.
+// Copyright (C) 2019-2023 Zilliz. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance
 // with the License. You may obtain a copy of the License at
@@ -10,14 +10,23 @@
 // or implied. See the License for the specific language governing permissions and limitations under the License.
 
 // This package offers a Milvus client implemented in Go.
+//
+// To install this package, run the following:
+//
+//	go get -u github.com/anthonytsu1984/gosdktobe
 package client
 
 import "context"
 
-func (c *GrpcClient) AlterAlias(ctx context.Context, colName string, alias string)
+// Changes an alias of a collection.
+//
+// # Parameters
+//   - colName Specifies the name of a collection.
+//   - alias Specifies a new alias for the collection.
+func (c *GrpcClient) AlterAlias(ctx context.Context, colName string, alias string) error
 
-func (c *GrpcClient) CreateAlias(ctx context.Context, colName string, alias string)
+func (c *GrpcClient) CreateAlias(ctx context.Context, colName string, alias string) error
 
-func (c *GrpcClient) DropAlias(ctx context.Context, alias string)
+func (c *GrpcClient) DropAlias(ctx context.Context, alias string) error
 
-func (c *GrpcClient) ListAlias(ctx context.Context, alias string)
+func (c *GrpcClient) ListAlias(ctx context.Context, alias string) error
