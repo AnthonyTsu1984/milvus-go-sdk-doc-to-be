@@ -13,15 +13,66 @@ package client
 
 import "context"
 
-// Changes an alias of a collection.
+// A GrpcClient method that changes an alias of a collection.
 //
 // # Parameters
-//   - colName Specifies the name of a collection.
-//   - alias Specifies a new alias for the collection.
-func (c *GrpcClient) AlterAlias(ctx context.Context, colName string, alias string) error
+//
+//   - collectionName
+//
+//     Specifies the name of a collection.
+//
+//     A collection name should be a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+//
+//   - alias
+//
+//     Specifies a new alias for the collection.
+//
+//     A collection alias is a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+func (c *GrpcClient) AlterAlias(ctx context.Context, collectionName string, alias string) error {
+	return nil
+}
 
-func (c *GrpcClient) CreateAlias(ctx context.Context, colName string, alias string) error
+// A GrpcClient method that creates an alias for a collection.
+//
+// # Parameters
+//
+//   - collectionName
+//
+//     Specifies the name of a collection.
+//
+//     A collection name should be a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+//
+//   - alias
+//
+//     Specifies a new alias for the collection.
+//
+//     A collection alias is a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+func (c *GrpcClient) CreateAlias(ctx context.Context, collectionName string, alias string) error {
+	return nil
+}
 
-func (c *GrpcClient) DropAlias(ctx context.Context, alias string) error
+// A GrpcClient method that drops an alias from a collection.
+//
+// # Parameters
+//
+//   - alias
+//
+//     Specifies a new alias for the collection.
+//
+//     A collection alias is a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+func (c *GrpcClient) DropAlias(ctx context.Context, alias string) error {
+	return nil
+}
 
-func (c *GrpcClient) ListAlias(ctx context.Context, alias string) error
+// A GrpcClient method that lists aliases of a collection.
+//
+// # Parameters
+//
+//   - collectionName
+//
+//     Specifies the name of a collection.
+//
+//     A collection name should be a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+func (c *GrpcClient) ListAliases(ctx context.Context, collectionName string) error {
+	return nil
+}
