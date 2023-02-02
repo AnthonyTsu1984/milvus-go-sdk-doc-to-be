@@ -28,6 +28,10 @@ import "context"
 //     Specifies a new alias for the collection.
 //
 //     A collection alias is a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+//
+// # Returns
+//
+// nil, indicating that this operation succeeds.
 func (c *GrpcClient) AlterAlias(ctx context.Context, collectionName string, alias string) error {
 	return nil
 }
@@ -47,6 +51,10 @@ func (c *GrpcClient) AlterAlias(ctx context.Context, collectionName string, alia
 //     Specifies a new alias for the collection.
 //
 //     A collection alias is a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+//
+// # Returns
+//
+// nil, indicating that this operation succeeds.
 func (c *GrpcClient) CreateAlias(ctx context.Context, collectionName string, alias string) error {
 	return nil
 }
@@ -60,6 +68,10 @@ func (c *GrpcClient) CreateAlias(ctx context.Context, collectionName string, ali
 //     Specifies a new alias for the collection.
 //
 //     A collection alias is a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+//
+// # Returns
+//
+// nil, indicating that this operation succeeds.
 func (c *GrpcClient) DropAlias(ctx context.Context, alias string) error {
 	return nil
 }
@@ -73,6 +85,10 @@ func (c *GrpcClient) DropAlias(ctx context.Context, alias string) error {
 //     Specifies the name of a collection.
 //
 //     A collection name should be a string of 1 to 255 characters, starting with a letter or an underscore (_) and containing only numbers, letters, and underscores (_).
+//
+// # Returns
+//
+// nil, indicating that this operation succeeds.
 func (c *GrpcClient) ListAliases(ctx context.Context, collectionName string) error {
 	return nil
 }

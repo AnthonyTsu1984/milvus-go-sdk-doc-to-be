@@ -31,6 +31,6 @@ import (
 // # Returns
 //
 // nil, indicating that this operation succeeds.
-func (*GrpcClient) CreateCollection(ctx context.Context, schema *entity.Schema, numShards int32, opts ...CreateCollectionOption) error {
+func (c *GrpcClient) CreateCollection(ctx context.Context, schema *entity.Schema, numShards int32, opts ...CreateCollectionOption) error {
 	return nil
 }
