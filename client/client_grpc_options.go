@@ -8,7 +8,7 @@ import (
 // This function type defines a set of functions that take a CreateCollectionRequest struct type as the only parameter.
 type CreateCollectionOption func(*server.CreateCollectionRequest)
 
-// This function helps set a consistency level in a CreateCollectionRequest struct type.
+// This function sets the consistency level in a CreateCollectionRequest struct type.
 //
 // # Parameters
 //
