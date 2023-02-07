@@ -68,7 +68,7 @@ func (c *GrpcClient) HasCollection(ctx context.Context, collectionName string) (
 //
 // # Parameters
 //
-// # None
+// None.
 //
 // # Returns
 //
