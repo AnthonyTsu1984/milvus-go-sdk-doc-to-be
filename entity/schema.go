@@ -193,7 +193,7 @@ func (t FieldType) PbFieldType() (string, string) {
 
 // The following constant definitions are values used to represent each [FieldType].
 const (
-	// FieldTypeNone zero value place holder
+	// FieldTypeNone zero value placeholder
 	FieldTypeNone FieldType = 0 // zero value place holder
 	// FieldTypeBool field type boolean
 	FieldTypeBool FieldType = 1

@@ -13,7 +13,7 @@ package client
 
 import "context"
 
-// A GrpcClient method that changes an alias of a collection.
+// This method changes an alias of a collection.
 //
 // # Parameters
 //
@@ -31,12 +31,12 @@ import "context"
 //
 // # Returns
 //
-// nil, indicating that this operation succeeds.
+// In normal cases, this method returns nil, indicating that this operation succeeds. For other values, see "Possible Errors".
 func (c *GrpcClient) AlterAlias(ctx context.Context, collectionName string, alias string) error {
 	return nil
 }
 
-// A GrpcClient method that creates an alias for a collection.
+// This method creates an alias for a collection.
 //
 // # Parameters
 //
@@ -54,12 +54,12 @@ func (c *GrpcClient) AlterAlias(ctx context.Context, collectionName string, alia
 //
 // # Returns
 //
-// nil, indicating that this operation succeeds.
+// In normal cases, this method returns nil, indicating that this operation succeeds. For other values, see "Possible Errors".
 func (c *GrpcClient) CreateAlias(ctx context.Context, collectionName string, alias string) error {
 	return nil
 }
 
-// A GrpcClient method that drops an alias from a collection.
+// This method drops an alias from a collection.
 //
 // # Parameters
 //
@@ -71,12 +71,12 @@ func (c *GrpcClient) CreateAlias(ctx context.Context, collectionName string, ali
 //
 // # Returns
 //
-// nil, indicating that this operation succeeds.
+// In normal cases, this method returns nil, indicating that this operation succeeds. For other values, see "Possible Errors".
 func (c *GrpcClient) DropAlias(ctx context.Context, alias string) error {
 	return nil
 }
 
-// A GrpcClient method that lists aliases of a collection.
+// This method lists aliases of a collection.
 //
 // # Parameters
 //
@@ -88,7 +88,7 @@ func (c *GrpcClient) DropAlias(ctx context.Context, alias string) error {
 //
 // # Returns
 //
-// nil, indicating that this operation succeeds.
+// In normal cases, this method returns nil, indicating that this operation succeeds. For other values, see "Possible Errors".
 func (c *GrpcClient) ListAliases(ctx context.Context, collectionName string) error {
 	return nil
 }
