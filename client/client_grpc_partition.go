@@ -166,6 +166,6 @@ func (c *GrpcClient) ListPartitions(ctx context.Context, collectionName string, 
 // In normal cases, this method returns nil, indicating that this operation succeeds. For other values, see "Possible Errors".
 //
 // # Possible Errors
-func (c *GrpcClient) ReleasePartitions(ctx context.Context, collectionName string, partitionName string, timeout float32) error {
+func (c *GrpcClient) ReleasePartition(ctx context.Context, collectionName string, partitionName string, timeout float32) error {
 	return nil
 }
