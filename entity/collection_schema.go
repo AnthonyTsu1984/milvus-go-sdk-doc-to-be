@@ -43,7 +43,7 @@ func (cl ConsistencyLevel) CommonConsistencyLevel() common.ConsistencyLevel {
 //   - Fields
 //
 //     A list of [Field] struct values.
-type Schema struct {
+type CollectionSchema struct {
 	CollectionName string
 	Description    string
 	AutoID         bool

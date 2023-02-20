@@ -23,3 +23,13 @@ func ExampleGrpcClient_DescribeCollection() {
 	fmt.Println("an example")
 	// Output: an example
 }
+
+func ExampleGrpcClient_DropCollection() {
+	fmt.Println("an example")
+	// Output: an example
+}
+
+func ExampleGrpcClient_ReleaseCollection() {
+	fmt.Println("an example")
+	// Output: an example
+}
